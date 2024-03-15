@@ -1,4 +1,4 @@
-name: Run Python Script
+name: Run Craft Test Script
     
 on:
   push:
