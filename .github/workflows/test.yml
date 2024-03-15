@@ -30,8 +30,8 @@ jobs:
       run: |
         python test.py --trained_model=weightfile.pth --cuda=False --test_folder=test_images
       
-    - name: Archive Results
+    - name: Archive Result
       uses: actions/upload-artifact@v2
       with:
-        name: results
-        path: ./results
+        name: result
+        path: ./result
