@@ -29,3 +29,9 @@ jobs:
     - name: Run Script
       run: |
         python test.py --trained_model=weightfile.pth --cuda=False --test_folder=test_images
+      
+    - name: Archive Results
+      uses: actions/upload-artifact@v2
+      with:
+        name: results
+        path: ./results
